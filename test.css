@@ -1,0 +1,321 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat";
+}
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr 6.4fr 3fr 3fr;
+  grid-template-areas:
+    "navbar navbar navbar"
+    "hero hero hero"
+    "btn-1 btn-2 btn-3"
+    "footer footer footer";
+  grid-gap: 0.3rem;
+  cursor: pointer;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: black;
+  font-weight: 800;
+}
+img {
+  width: 400px;
+  margin: 20px;
+  margin-top: 100px;
+  border-radius: 50%;
+  margin-left: 100px;
+  transform: rotate(2deg);
+}
+main > hr {
+  margin: 40px;
+  margin-top: 100px;
+  border: 1px solid rgb(44, 206, 198);
+  height: 300px;
+}
+.hr-1 {
+  width: 90px;
+  position: absolute;
+  top: 20px;
+  border: 1px solid white;
+  left: -20px;
+  transform: rotate(-40deg);
+}
+.hr-2 {
+  width: 80px;
+  position: absolute;
+  top: 20px;
+  border: 1px solid white;
+  right: -30px;
+  transform: rotate(40deg);
+}
+.hr-3 {
+  width: 80px;
+  border: 1px solid white;
+  position: absolute;
+  bottom: 25px;
+  right: -20px;
+  transform: rotate(-40deg);
+}
+.hr-4 {
+  width: 80px;
+  position: absolute;
+  border: 1px solid white;
+  bottom: 25px;
+  left: -20px;
+  transform: rotate(40deg);
+}
+.container-image {
+  background-color: rgba(231, 12, 12, 0.342);
+  width: 550px;
+  margin: 10px;
+  position: relative;
+  margin-left: 100px;
+  border-radius: 20px;
+}
+h3 {
+  color: white;
+  margin-top: 100px;
+  font-size: 30px;
+  text-align: start;
+  line-height: 3rem;
+  text-transform: uppercase;
+  text-shadow: 0em 0.1em red;
+}
+.hero-p-1 {
+  font-size: 2rem;
+  margin-top: 100px;
+  margin-right: 200px;
+  color: white;
+  text-transform: uppercase;
+  text-shadow: 0.1em 0.1em blueviolet;
+}
+.hero-p-2 {
+  font-size: 3rem;
+  text-transform: uppercase;
+  margin-right: 150px;
+  color: white;
+  text-shadow: 0.1em 0.1em blueviolet;
+}
+h4 {
+  color: white;
+  margin-top: 100px;
+  font-size: 25px;
+  text-align: start;
+  text-transform: uppercase;
+  line-height: 3rem;
+  text-shadow: 0.1em 0.1em blueviolet;
+}
+.bubble-1 h3 {
+  margin-left: 20px;
+}
+#heart {
+  position: relative;
+  width: 200px;
+  height: 90px;
+  right: 360px;
+  top: 250px;
+  transition: margin 3s 0.1s ease-out;
+}
+#heart:hover {
+  margin: 50px;
+}
+#heart:before,
+#heart:after {
+  position: absolute;
+  content: "";
+  left: 50px;
+  top: 0;
+  width: 50px;
+  height: 80px;
+  background-image: linear-gradient(rgb(183, 0, 255), rgb(255, 0, 255));
+  border-radius: 50px 50px 0 0;
+  transform: rotate(-45deg);
+  transform-origin: 0 100%;
+}
+#heart:after {
+  left: 0;
+  transform: rotate(45deg);
+  transform-origin: 100% 100%;
+}
+.bubble-2 h4 {
+  margin-left: 24px;
+}
+.bubble-1 {
+  word-wrap: break-word;
+  position: relative;
+  border-radius: 100%;
+  width: 1000px;
+  height: 300px;
+  text-align: center;
+  margin: 5px;
+  background-color: rgba(33, 151, 197, 0.452);
+}
+.bubble-2 {
+  word-wrap: break-word;
+  position: relative;
+  border-radius: 100%;
+  width: 1000px;
+  height: 300px;
+  background-color: rgba(33, 151, 197, 0.452);
+}
+#hero {
+  margin: 10px;
+  grid-area: hero;
+  display: flex;
+  background-color: rgba(135, 235, 235, 0.4);
+}
+.navbar ul {
+  display: flex;
+  grid-gap: 30px;
+  padding: 10px;
+  margin-top: 30px;
+  margin-left: 100px;
+  list-style: none;
+  justify-content: center;
+  position: relative;
+}
+.navbar ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+  padding: 10px 20px;
+  text-transform: capitalize;
+  border-radius: 5px;
+  background-color: rgba(33, 202, 207, 0.486);
+}
+.navbar ul li a:focus {
+  background-color: rgba(5, 94, 97, 0.788);
+}
+.hero-btn-1 {
+  position: absolute;
+  top: 35rem;
+  border-radius: 5px;
+  border: none;
+  font-size: 30px;
+  text-rendering: optimizeLegibility;
+  text-transform: capitalize;
+  color: aliceblue;
+  margin-right: 200px;
+  font-weight: 800;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  padding: 20px 30px 20px 30px;
+  background-color: rgba(7, 70, 70, 0.397);
+}
+.hero-btn-2 {
+  position: absolute;
+  top: 35rem;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  text-rendering: optimizeLegibility;
+  color: aliceblue;
+  text-transform: uppercase;
+  padding: 20px 40px 20px 40px;
+  border-radius: 5px;
+  border: none;
+  font-size: 30px;
+  font-weight: 800;
+  margin-right: 400px;
+  background-color: rgba(7, 70, 70, 0.397);
+}
+.hero-btn-2:hover {
+  background-color: black;
+}
+.hero-btn-1:hover {
+  background-color: black;
+}
+button {
+  position: absolute;
+  right: 30px;
+  cursor: pointer;
+  top: 45px;
+}
+button a {
+  color: whitesmoke;
+  font-family: sans-serif;
+  text-transform: capitalize;
+  margin: 15px;
+  font-weight: 00;
+  text-decoration: none;
+}
+.signup:hover {
+  margin-top: -10px;
+}
+.login:hover {
+  margin-top: -10px;
+}
+.login {
+  transition: margin-top 2s 0.1s ease-in-out;
+  background-color: rgb(15, 241, 241);
+  padding: 15px 2px 15px 2px;
+  margin-right: -20px;
+  border-radius: 5px;
+  font-family: "Montserrat";
+  border: none;
+  box-shadow: 0px 3px 200px rgba(0, 0, 0, 0.459);
+}
+.signup {
+  transition: margin-top 2s 0.1s ease-in-out;
+  margin-right: 65px;
+  padding: 15px 5px 15px 5px;
+  border: none;
+  box-shadow: 0px 3px 200px rgba(0, 0, 0, 0.185);
+  border-radius: 5px;
+  background-color: rgba(49, 49, 168, 0.432);
+}
+.navbar {
+  gap: 30px;
+  grid-area: navbar;
+  background-color: rgba(135, 235, 235, 0.4);
+  margin-bottom: 10px;
+  padding-bottom: 30px;
+}
+footer {
+  margin-top: 100px;
+  grid-area: footer;
+  background-color: rgb(22, 180, 228);
+}
+.btn-1 {
+  grid-area: btn-1;
+  border-radius: 10px;
+  margin: 5px;
+  background-color: rgba(5, 81, 221, 0.466);
+  text-align: center;
+}
+.btn-2 {
+  grid-area: btn-2;
+  border-radius: 10px;
+  margin: 5px;
+  background-color: rgba(255, 9, 255, 0.534);
+  text-align: center;
+}
+.btn-3 {
+  grid-area: btn-3;
+  text-align: center;
+  margin: 5px;
+  background-color: rgba(9, 243, 48, 0.534);
+  border-radius: 10px;
+}
+.read {
+  background-color: rgba(0, 0, 0, 0.473);
+  color: aliceblue;
+  border: none;
+  border-radius: 10px;
+  margin-top: 45%;
+  padding: 15px;
+}
+.read:hover {
+  background-color: black;
+}
+footer {
+  border-radius: 10px;
+  margin: 5px;
+  background-color: rgba(33, 202, 207, 0.486);
+}
+form {
+  text-align: start;
+  margin-left: 30px;
+  color: rgba(7, 159, 230, 0.856);
+  font-size: 20px;
+  text-transform: capitalize;
+  font-family: sans-serif;
+  font-weight: 600;
+}
